@@ -14,9 +14,10 @@ public class Runner {
         HelloWorld object = context.getBean(HelloWorld.class);
 
         System.out.println(object.sayHello());*/
+        
         ApplicationContext cont = SpringApplication.run(Runner.class,args);
-        HelloWorld object = (HelloWorld) cont.getBean("helloworld");
+        HelloWorld object = cont.getBean(HelloWorld.class);
 
-        object.sayHello();
+        System.out.println(object.sayHello());
     }
 }
