@@ -29,10 +29,18 @@ public class Runner {
 
         object.sayHello();*/
 
+        /**
+         * Constructor based Dependency Injection. Using interface to call appropriate method in class.
+         */
+        /*
         ApplicationContext context = SpringApplication.run(Runner.class,args);
         ConstructorBasedInjection objConst = context.getBean(ConstructorBasedInjection.class);
 
-        objConst.getGreetings("This is the constructor greetings");
+        objConst.getGreetings("This is the constructor greetings");*/
 
+        ApplicationContext context = SpringApplication.run(Runner.class,args);
+        SetterBasedDI obj = context.getBean(SetterBasedDI.class);
+
+        obj.getMessage("Setter Based Dependency injection =======");
     }
 }
