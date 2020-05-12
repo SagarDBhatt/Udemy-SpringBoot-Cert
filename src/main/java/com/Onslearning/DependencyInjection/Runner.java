@@ -36,11 +36,14 @@ public class Runner {
         ApplicationContext context = SpringApplication.run(Runner.class,args);
         ConstructorBasedInjection objConst = context.getBean(ConstructorBasedInjection.class);
 
-        objConst.getGreetings("This is the constructor greetings");*/
+        objConst.getGreetings("Constructor based Dependency Injection");*/
 
-        ApplicationContext context = SpringApplication.run(Runner.class,args);
+        /**
+         * Setter Based Dependency Injection. 
+         */
+        /*ApplicationContext context = SpringApplication.run(Runner.class,args);
         SetterBasedDI obj = context.getBean(SetterBasedDI.class);
 
-        obj.getMessage("Setter Based Dependency injection =======");
+        obj.getMessage("Setter Based Dependency injection =======");*/
     }
 }
