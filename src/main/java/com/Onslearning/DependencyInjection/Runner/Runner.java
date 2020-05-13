@@ -1,9 +1,9 @@
-package com.Onslearning.DependencyInjection;
+package com.Onslearning.DependencyInjection.Runner;
 
+import com.Onslearning.DependencyInjection.Controller.SetterBasedDI;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import sun.jvm.hotspot.HelloWorld;
 
 @SpringBootApplication
 public class Runner {
@@ -45,5 +45,11 @@ public class Runner {
         SetterBasedDI obj = context.getBean(SetterBasedDI.class);
 
         obj.getMessage("Setter Based Dependency injection =======");*/
+
+        ApplicationContext context = SpringApplication.run(Runner.class,args);
+
+        SetterBasedDI object = context.getBean(SetterBasedDI.class);
+
+        object.getMessage("This is Spring");
     }
 }

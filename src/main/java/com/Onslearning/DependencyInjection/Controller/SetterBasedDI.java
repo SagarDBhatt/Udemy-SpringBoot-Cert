@@ -1,8 +1,10 @@
-package com.Onslearning.DependencyInjection;
+package com.Onslearning.DependencyInjection.Controller;
 
-import org.graalvm.compiler.lir.CompositeValue;
+import com.Onslearning.DependencyInjection.Service.HelloWorldEnglishImpl;
+import com.Onslearning.DependencyInjection.Service.HelloWorldService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 @Component
 public class SetterBasedDI {

@@ -1,4 +1,4 @@
-package com.Onslearning.DependencyInjection;
+package com.Onslearning.DependencyInjection.Runner;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
