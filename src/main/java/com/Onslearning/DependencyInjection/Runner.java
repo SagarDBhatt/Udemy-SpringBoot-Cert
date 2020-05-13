@@ -39,7 +39,7 @@ public class Runner {
         objConst.getGreetings("Constructor based Dependency Injection");*/
 
         /**
-         * Setter Based Dependency Injection. 
+         * Setter Based Dependency Injection. Using Setter method to initiate the objects.
          */
         /*ApplicationContext context = SpringApplication.run(Runner.class,args);
         SetterBasedDI obj = context.getBean(SetterBasedDI.class);
