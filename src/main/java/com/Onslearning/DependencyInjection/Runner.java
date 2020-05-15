@@ -1,5 +1,6 @@
-package com.Onslearning.DependencyInjection.Runner;
+package com.Onslearning.DependencyInjection;
 
+import com.Onslearning.DependencyInjection.Controller.ConstructorBasedInjection;
 import com.Onslearning.DependencyInjection.Controller.SetterBasedDI;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -49,6 +50,7 @@ public class Runner {
         ApplicationContext context = SpringApplication.run(Runner.class,args);
 
         SetterBasedDI object = context.getBean(SetterBasedDI.class);
+        //ConstructorBasedInjection object = context.getBean(ConstructorBasedInjection.class);
 
         object.getMessage("This is Spring");
     }
