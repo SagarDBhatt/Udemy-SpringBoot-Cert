@@ -7,4 +7,29 @@
 
 ** Two types of DI:
 
--> Constuctor Based DI: 
+1) Constuctor Based DI:
+       -> In constructor, pass object of the class:
+
+        eg. public class ConstructorBasedInjection {
+
+                private HelloWorldService helloWorldService;        //Private object of the class(interface) that needs to create.
+
+                @Autowired
+                public ConstructorBasedInjection(HelloWorldService helloWorldService){      //Constructor passes required object.
+                    this.helloWorldService = helloWorldService;
+                }
+
+2) Setter Based DI:
+        -> Setter method to pass object of the class:
+
+        eg. public class SetterBasedDI {
+
+                private HelloWorldService helloWorldService;
+
+                @Autowired
+                public void setHelloWorldService(HelloWorldService helloWorldService) {     //Create Setter method to pass required object
+                    this.helloWorldService = helloWorldService;
+                }
+
+--> Good practice is to create an "Interface" and implements interface in classes. Create object of interface and pass in
+    Dependecy injection via Setter Based OR Constructor Based.
