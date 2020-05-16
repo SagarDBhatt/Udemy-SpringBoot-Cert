@@ -4,8 +4,8 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-@Component
-@Profile("Hindi")
+/*@Component
+@Profile("Hindi")*/
 public class HelloWorldHindiImpl implements HelloWorldService {
 
 

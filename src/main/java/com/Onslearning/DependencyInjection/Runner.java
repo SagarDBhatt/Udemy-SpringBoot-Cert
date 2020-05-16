@@ -2,6 +2,7 @@ package com.Onslearning.DependencyInjection;
 
 import com.Onslearning.DependencyInjection.Controller.ConstructorBasedInjection;
 import com.Onslearning.DependencyInjection.Controller.SetterBasedDI;
+import com.Onslearning.DependencyInjection.Service.HelloWorldService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -16,7 +17,6 @@ public class Runner {
          */
         /*AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfiguration.class);
         HelloWorld object = context.getBean(HelloWorld.class);
-
         object.sayHello();*/
 
         /**  2.
@@ -27,7 +27,6 @@ public class Runner {
          */
         /*ApplicationContext cont = SpringApplication.run(Runner.class,args);
         HelloWorldImpl object = cont.getBean(HelloWorldImpl.class);
-
         object.sayHello();*/
 
         /**  3.
@@ -36,7 +35,6 @@ public class Runner {
         /*
         ApplicationContext context = SpringApplication.run(Runner.class,args);
         ConstructorBasedInjection objConst = context.getBean(ConstructorBasedInjection.class);
-
         objConst.getGreetings("Constructor based Dependency Injection");*/
 
         /** 4.
@@ -44,7 +42,6 @@ public class Runner {
          */
         /*ApplicationContext context = SpringApplication.run(Runner.class,args);
         SetterBasedDI obj = context.getBean(SetterBasedDI.class);
-
         obj.getMessage("Setter Based Dependency injection =======");*/
 
         /**
@@ -53,10 +50,13 @@ public class Runner {
          */
         /*
         ApplicationContext context = SpringApplication.run(Runner.class,args);
-
         SetterBasedDI object = context.getBean(SetterBasedDI.class);
-        //ConstructorBasedInjection object = context.getBean(ConstructorBasedInjection.class);
-
         object.getMessage("This is Spring");*/
+
+        ApplicationContext context = SpringApplication.run(Runner.class,args);
+        SetterBasedDI obj = context.getBean(SetterBasedDI.class);
+        obj.getMessage("SetterBased DI --- Java Annotation -- using Configuration annotation to retrieve object");
+
+
     }
 }
