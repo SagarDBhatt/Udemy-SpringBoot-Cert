@@ -32,4 +32,21 @@
                 }
 
 --> Good practice is to create an "Interface" and implements interface in classes. Create object of interface and pass in
-    Dependecy injection via Setter Based OR Constructor Based.
+    Dependency injection via Setter Based OR Constructor Based.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+********************************************************************************************************
+
+**** JAVA Annotation Based Configuration ****
+
+--> @Configuration annotation shows application to identify this class as a config app.
+
+--> @Bean annotation is required for a method annotated to return object.
+
+       eg. @Configuration
+           public class AppConfiguration {
+               @Bean
+               @Profile("default")
+               public HelloWorldService HelloWordlEnglishImpl(){
+                   return new HelloWorldEnglishImpl();
+               }

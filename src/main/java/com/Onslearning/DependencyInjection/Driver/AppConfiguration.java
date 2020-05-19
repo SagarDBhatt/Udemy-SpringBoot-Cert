@@ -9,9 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @Configuration
-//@ComponentScan
+@ComponentScan
 public class AppConfiguration {
-
     @Bean
     @Profile("default")
     public HelloWorldService HelloWordlEnglishImpl(){
