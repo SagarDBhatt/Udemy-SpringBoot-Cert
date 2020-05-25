@@ -6,3 +6,19 @@
     --> Inserted Web and Thymeleaf project.
     --> Created index.html file at Resources -> Template. This was Thymeleaf project.
 
+** MVC Controller package
+
+    --> Create MVC controller package.
+    --> Annotate with @Controller.
+    --> Create a method (any name) with return type String. Return name of the index page. (In our case "index")
+    --> Index.html page should be: "Resources -> templates" So Controller can map the path of the index page.
+    --> @RequestMapping : Annotation for mapping index.html with Controller.
+
+    @Controller
+    public class IndexController {
+
+        @RequestMapping("/")
+        public String index(){
+            return "index";
+        }
+    }  
