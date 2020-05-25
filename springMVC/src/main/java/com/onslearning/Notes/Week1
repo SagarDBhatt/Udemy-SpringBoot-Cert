@@ -4,7 +4,8 @@
 ** Spring MVC project using Spring initializer
 
     --> Inserted Web and Thymeleaf project.
-    --> Created index.html file at Resources -> Template. This was Thymeleaf project.
+    --> Created index.html file at Resources -> Template. This is Thymeleaf templating project.
+            -->
 
 ** MVC Controller package
 
@@ -21,4 +22,11 @@
         public String index(){
             return "index";
         }
-    }  
+    }
+
+===========================
+
+CDN bootstrap. First link goes to CDN bootstrap file.
+// "th" tag link is thymeleaf template.
+// When application runs on browser, CDN link is used.
+// When application runs under tomcat server then tomcat will use "th" - thymleaf link CSS.   -->
