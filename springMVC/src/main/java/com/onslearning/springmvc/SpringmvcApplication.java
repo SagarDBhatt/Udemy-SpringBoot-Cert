@@ -1,4 +1,4 @@
-package com.onslearning.springmvc;
+package springmvc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
