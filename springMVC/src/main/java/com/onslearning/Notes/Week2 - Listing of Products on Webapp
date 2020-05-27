@@ -21,7 +21,8 @@
             eg.  products = new HashMap<>();
 
 
-    --> Initiate object of Class "Product" 
+    --> Initiate object of Class "Product" and set value of all properties. Put value of product object into hash map.
+
                         Product product1 = new Product();
 
                         product1.setId(1);
@@ -30,3 +31,5 @@
                         product1.setImageURL("http://exaple.com/product1");
 
                         products.put(1,product1);
+
+     --> "@Service" annotation is used to set the class as Spring container. Simillar to "@ComponentScan".

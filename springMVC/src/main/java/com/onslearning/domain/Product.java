@@ -1,6 +1,5 @@
 package com.onslearning.domain;
 
-
 public class Product {
     private Integer id;
     private String description;

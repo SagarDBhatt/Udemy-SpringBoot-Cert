@@ -1,7 +1,6 @@
 package com.onslearning.Services;
 
 import com.onslearning.domain.Product;
-import com.sun.tools.javac.util.List;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ public class PorductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Product> loadAllProducts() {
+    public ArrayList<Product> loadAllProducts() {
         return new ArrayList<>(products.values());
     }
 
