@@ -12,4 +12,21 @@
     --> Package "Services". "ProductService" interface.
     --> Class "ProductServiceImpl" to implement interface methods.
 
+** IMP **
 
+    --> Create Map<> variable with Integer key and "Product" class object as value.
+            eg. Map<Integer,Product> products;
+
+    --> Initialize Map<> variable (products) as a HashMap<>() object.
+            eg.  products = new HashMap<>();
+
+
+    --> Initiate object of Class "Product" 
+                        Product product1 = new Product();
+
+                        product1.setId(1);
+                        product1.setDescription(" Product 1");
+                        product1.setPrice(100.25);
+                        product1.setImageURL("http://exaple.com/product1");
+
+                        products.put(1,product1);

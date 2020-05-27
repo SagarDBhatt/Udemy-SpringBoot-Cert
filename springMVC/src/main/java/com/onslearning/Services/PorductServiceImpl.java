@@ -2,11 +2,13 @@ package com.onslearning.Services;
 
 import com.onslearning.domain.Product;
 import com.sun.tools.javac.util.List;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class PorductServiceImpl implements ProductService {
 
     private Map<Integer,Product> products;
