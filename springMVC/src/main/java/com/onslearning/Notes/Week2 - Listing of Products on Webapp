@@ -1,0 +1,15 @@
+----------------------- ONSJHJSA -----------------------
+********************************************************
+
+**** Listing of Products::
+
+    --> Create package "domain". Class "Product"
+    --> Private attrib : id, description, price, imageURL
+    --> Impl Getter & Setter methods
+
+**** Interface for method architecture:
+
+    --> Package "Services". "ProductService" interface.
+    --> Class "ProductServiceImpl" to implement interface methods.
+
+
