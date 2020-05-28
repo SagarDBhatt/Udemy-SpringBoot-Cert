@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Core List all products</title>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          rel="stylesheet" media="screen"/>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"></script>
+
+    <link href="../static/CSS/spring-core.css"
+          th:href="@{CSS/spring-core.css}" rel="stylesheet" media="screen">
+</head>
+<body>
+
+<div class="container">
+
+    <div th:if="${not #lists.isEmpty(product)}">
+        <h2> Product List </h2>
+
+        <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Image URL</th>
+            </tr>
+
+            <tr th:each="product : ${product}">
+                <td th:text="${product.Id}"></td>
+                <td th:text="${product.Desctiption}"></td>
+                <td th:text="${product.Price}"></td>
+                <td th:text="${product.imageURL}"></td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>
