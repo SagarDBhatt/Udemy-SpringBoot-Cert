@@ -16,10 +16,10 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @RequestMapping("/product")
+    @RequestMapping("/products")
     public String loadProducts(Model model){
 
-        model.addAttribute("product", productService.loadAllProducts());
-        return "product";
+        model.addAttribute("products", productService.loadAllProducts());
+        return "products";
     }
 }
