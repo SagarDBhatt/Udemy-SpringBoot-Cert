@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface ProductService {
 
-    ArrayList<Product> loadAllProducts();
+    List<Product> loadAllProducts();
 
 }

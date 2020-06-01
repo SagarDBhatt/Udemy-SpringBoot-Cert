@@ -5,8 +5,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+
+/**
+ * Initially, I used @Controller annotation but it could not capture products class.
+ * So I need to change annotation to "@RestController" to resolve the issue.
+ *
+ * Another approach: Use "@Controller" & "@ResponseBody" annotation to solve the isses.
+ */
+@RestController
 public class ProductController {
 
     private ProductService productService;
@@ -18,7 +26,6 @@ public class ProductController {
 
     @RequestMapping("/products")
     public String loadProducts(Model model){
-
         model.addAttribute("products", productService.loadAllProducts());
         return "products";
     }
