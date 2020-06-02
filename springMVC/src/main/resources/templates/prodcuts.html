@@ -14,6 +14,8 @@
 </head>
 <body>
 
+<h2> Outside reach </h2>
+
 <div class="container">
 
     <div th:if="${not #lists.isEmpty(products)}">
@@ -28,10 +30,10 @@
             </tr>
 
             <tr th:each="product : ${products}">
-                <td th:text="${product.id}"></td>
-                <td th:text="${product.desctiption}"></td>
-                <td th:text="${product.price}"></td>
-                <td th:text="${product.imageURL}"></td>
+                <td th:text="${products.id}"></td>
+                <td th:text="${products.desctiption}"></td>
+                <td th:text="${products.price}"></td>
+                <td th:text="${products.imageURL}"></td>
             </tr>
 
         </table>

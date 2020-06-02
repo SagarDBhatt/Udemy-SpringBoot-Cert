@@ -26,7 +26,9 @@ public class ProductController {
 
     @RequestMapping("/products")
     public String loadProducts(Model model){
-        model.addAttribute("products", productService.loadAllProducts());
-        return "products";
+
+        model.addAttribute("products",productService.loadAllProducts());
+
+        return "123";
     }
 }

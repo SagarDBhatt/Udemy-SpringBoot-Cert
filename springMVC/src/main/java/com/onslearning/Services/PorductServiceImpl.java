@@ -19,6 +19,7 @@ public class PorductServiceImpl implements ProductService {
 
     @Override
     public List<Product> loadAllProducts() {
+        //System.out.println("inside LoadProducts method");
         return new ArrayList<>(products.values());
     }
 
@@ -28,7 +29,7 @@ public class PorductServiceImpl implements ProductService {
         Product product1 = new Product();
 
         product1.setId(1);
-        product1.setDescription(" Product 1");
+        product1.setDescription("Product 1");
         product1.setPrice(100.25);
         product1.setImageURL("http://exaple.com/product1");
 
