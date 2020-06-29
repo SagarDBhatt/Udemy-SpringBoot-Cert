@@ -27,8 +27,10 @@ public class ProductController {
     @RequestMapping("/products")
     public String loadProducts(Model model){
 
-        model.addAttribute("products",productService.loadAllProducts());
+        //System.out.println("Product List : " + productService.loadAllProducts());
 
-        return "123";
+        model.addAttribute("prod",productService.loadAllProducts());
+
+        return "product";
     }
 }

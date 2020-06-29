@@ -19,7 +19,7 @@ public class PorductServiceImpl implements ProductService {
 
     @Override
     public List<Product> loadAllProducts() {
-        //System.out.println("inside LoadProducts method");
+        //System.out.println("inside LoadProducts method" + products.keySet());
         return new ArrayList<>(products.values());
     }
 
@@ -43,6 +43,8 @@ public class PorductServiceImpl implements ProductService {
         product2.setImageURL("http://example.com/product2");
 
         products.put(2,product2);
+
+        //System.out.println("Products: " + products.get(1));
     }
 
 

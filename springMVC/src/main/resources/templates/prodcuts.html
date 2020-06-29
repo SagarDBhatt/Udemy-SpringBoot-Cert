@@ -18,7 +18,6 @@
 
 <div class="container">
 
-    <div th:if="${not #lists.isEmpty(products)}">
         <h2> Product List </h2>
 
         <table class="table table-striped">
@@ -29,11 +28,11 @@
                 <th>Image URL</th>
             </tr>
 
-            <tr th:each="product : ${products}">
-                <td th:text="${products.id}"></td>
-                <td th:text="${products.desctiption}"></td>
-                <td th:text="${products.price}"></td>
-                <td th:text="${products.imageURL}"></td>
+            <tr th:each="product : ${prod}">
+                <td th:text="${product.id}"></td>
+                <td th:text="${product.desctiption}"></td>
+                <td th:text="${product.price}"></td>
+                <td th:text="${product.imageURL}"></td>
             </tr>
 
         </table>
